@@ -1,0 +1,18 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: item-service
+  datasource:
+    url: jdbc:mysql://192.168.2.158:3306/zf_yun
+    username: root
+    password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+
+
